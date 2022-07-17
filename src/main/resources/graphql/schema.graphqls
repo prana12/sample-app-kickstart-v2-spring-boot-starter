@@ -7,11 +7,17 @@ type Query {
 
     employees: [Employee]
     employee(id: ID!): Employee!
+
+
+    pingHelloWorld: String
+    pingMessage(message: String!): String
 }
 
 type Mutation {
     newDepartment(department: DepartmentInput!): Department
     newEmployee(employee: EmployeeInput!): Employee
     newOrganization(organization: OrganizationInput!): Organization
+
+    pingMutation(message: String!): String
 }
 
